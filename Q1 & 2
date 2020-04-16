@@ -1,0 +1,23 @@
+#Here is Q1
+
+num = int (input ("Choose a number:"))
+
+firstTerm = 0
+secondTerm = 1
+
+for (i in range(num)):
+	if (i <= 1):
+		temp = i
+	else:
+		temp = firstTerm + secondTerm
+		firstTerm = secondTerm
+		secondTerm = temp
+	print(temp)
+
+
+
+
+#Here is a Q2
+with open('address - address.csv') as address:
+	csv_reader = csv.DictReader(address)
+	ontario = [row in enumerate(reader) if Province = "Ontaio"]
